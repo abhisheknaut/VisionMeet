@@ -61,7 +61,7 @@ const AuthPage = () => {
     const userData = { name, email, password, image: imageUrl };
 
     try {
-      const sendData = await fetch("http://localhost:4000/register", {
+      const sendData = await fetch("https://visionmeet-pgte.onrender.com/register", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(userData),
@@ -205,3 +205,4 @@ const AuthPage = () => {
 };
 
 export default AuthPage;
+
