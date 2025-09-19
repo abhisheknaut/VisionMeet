@@ -14,7 +14,7 @@ const server = http.createServer(app);
 
 const io = new Server(server, {
   cors: {
-    origin: "http://localhost:5173", // React frontend
+    origin: "https://visionmeet-pgte.onrender.com", // React frontend
     credentials: true,
   },
 });
@@ -151,3 +151,4 @@ app.get("/call/:id", async (req, res) => {
 server.listen(port, () => {
   console.log(`🚀 Server listening on port ${port}`);
 });
+
