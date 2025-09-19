@@ -14,7 +14,7 @@ import io from "socket.io-client";
 import { set } from "mongoose";
 
 // Connect to backend signaling server
-const socket = io("http://localhost:4000");
+const socket = io("https://visionmeet-pgte.onrender.com");
 
 
 const HostPage = () => {
@@ -240,3 +240,4 @@ const HostPage = () => {
 };
 
 export default HostPage;
+
