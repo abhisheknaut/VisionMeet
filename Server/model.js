@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 main().catch(err => console.log(err));
 
 async function main() {
-  await mongoose.connect('mongodb://127.0.0.1:27017/videoCall-user');
+  await mongoose.connect('mongodb+srv://anautiyal206_db_user:Abhishek2006@cluster0.rwmcdcd.mongodb.net/');
 
 }
 
@@ -19,5 +19,6 @@ const userSchema = new mongoose.Schema({
 });
 
 const userModel = mongoose.model('userModel', userSchema);
+
 
 module.exports = userModel
