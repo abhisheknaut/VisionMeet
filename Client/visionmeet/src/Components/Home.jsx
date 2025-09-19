@@ -8,7 +8,7 @@ import "@fontsource/poppins"; // install with: npm i @fontsource/poppins
 const HomePage = () => {
   const navigate = useNavigate();
   const handleLogout = async () => {
-    const res = await fetch("http://localhost:4000/logout");
+    const res = await fetch("https://visionmeet-pgte.onrender.com/logout");
     if (res.status === 200) {
       navigate("/");
     }
@@ -150,3 +150,4 @@ const HomePage = () => {
 };
 
 export default HomePage;
+
